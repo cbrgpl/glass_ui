@@ -5,14 +5,10 @@ import { defineConfig } from 'vite'
 import tsconfigPaths from 'vite-tsconfig-paths'
 
 export default defineConfig( {
-  root: './public',
+  root: './',
 
   build: {
     sourcemap: true,
-    emptyOutDir: true,
-    rollupOptions: {
-      input: './public/index.html'
-    }
   },
 
   server: {
