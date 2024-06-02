@@ -10,19 +10,12 @@ export default {
         ignoreFunctions: ['theme', 'v-bind'],
       },
     ],
-    'selector-class-pattern': bemMatching,
+    'selector-class-pattern': /^[a-zA-Z]+(-[a-zA-Z]+)*(__[a-zA-Z]+(-[a-zA-Z]+)*)?(--[a-zA-Z]+(-[a-zA-Z]+)*)?$/,
     'max-nesting-depth': 2,
     'at-rule-no-unknown': [
       true,
       {
-        ignoreAtRules: [
-          'tailwind',
-          'layer',
-          'apply',
-          'variants',
-          'responsive',
-          'screen',
-        ],
+        ignoreAtRules: ['tailwind', 'layer', 'apply', 'variants', 'responsive', 'screen'],
       },
     ],
     'value-keyword-case': [
